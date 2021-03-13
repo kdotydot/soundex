@@ -18,6 +18,7 @@ class Controller extends BaseController
         ->select('profile_lastname', 'profile_firstname')
         ->where('profile_lastname', '=', $request->lastname)
         ->where('profile_firstname', '=', $request->firstname)
+        ->where('profile_middlename', '=', $request->middlename)
         ->get();
         $array = array();
         $array2 = array();
